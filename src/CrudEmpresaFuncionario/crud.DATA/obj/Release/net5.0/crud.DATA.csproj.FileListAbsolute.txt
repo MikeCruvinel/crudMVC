@@ -1,0 +1,12 @@
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\bin\Release\net5.0\crud.DATA.deps.json
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\bin\Release\net5.0\crud.DATA.dll
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\bin\Release\net5.0\ref\crud.DATA.dll
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\bin\Release\net5.0\crud.DATA.pdb
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.csproj.AssemblyReference.cache
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.AssemblyInfoInputs.cache
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.AssemblyInfo.cs
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.csproj.CoreCompileInputs.cache
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.dll
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\ref\crud.DATA.dll
+C:\Users\Cruvi\Documents\ProjetoCRUD\src\CrudEmpresaFuncionario\crud.DATA\obj\Release\net5.0\crud.DATA.pdb
