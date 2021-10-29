@@ -55,8 +55,14 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/lib/jquery/dist/jquery.mask.min.js"></script>
     <script type="text/javascript">
-        $("#Salario").mask("999.999.990,00", { reverse: true })
+        $(document).ready(function () {
+            $('#Salario').mask('999,999.00', { reverse: true });
+
+            $("#Salario").change(function () {
+                $("#Salario").html($(this).val().replace(/\D/g, ''))
+            })
+        });
     </script>
 }

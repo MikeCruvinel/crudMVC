@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bff62e6c-06e0-4762-9d44-5e250cba3ca1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("crudEmpresaFuncionario.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

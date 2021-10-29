@@ -11,13 +11,15 @@ namespace crud.DATA.Models
 {
     public partial class Funcionario
     {
-        [MaxLength(200, ErrorMessage = "Digite no máximo 200 digitos")]
+        [Required]
+        [MaxLength(200)]
         [StringLength(200)]
         public string Nome { get; set; }
         [StringLength(50)]
         public string Cargo { get; set; }
-        [StringLength(50)]
-        public string Salario { get; set; }
+        //[Required]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Salario { get; set; }
         [Column("Id_Empresa")]
         public int? IdEmpresa { get; set; }
         [Key]

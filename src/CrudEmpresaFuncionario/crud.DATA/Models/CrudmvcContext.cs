@@ -25,7 +25,7 @@ namespace crud.DATA.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-AMPGCIP3\\SQLEXPRESS;Initial Catalog=crudMVC;User ID=sa;Password=123");
+                optionsBuilder.UseSqlServer("Data Source=crudmvc.database.windows.net;Initial Catalog=crudMVCreaaal ;User ID=Mike;Password=Passarinho020700.");
             }
         }
 

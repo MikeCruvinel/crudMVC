@@ -55,7 +55,7 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Numero" class="control-label"></label>
-                        <input asp-for="Numero" class="form-control" />
+                        <input type="number" asp-for="Numero" class="form-control" />
                         <span asp-validation-for="Numero" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -77,22 +77,12 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/lib/jquery/dist/jquery.mask.min.js"></script>
 
-<script type="text/javascript">
-    $("#Create").validate({
-        rules: {
-            Nome: {
-                maxlenght: 11,
-                minlenght: 4
-            }
-        }
-    })
-</script>
-
-<script type="text/javascript">
-    $("#Telefone").mask("(00) 0000-0000")
-    $("#Cep").mask("00.000-000")
-</script>
+    <script type="text/javascript">
+        $("#Telefone").mask("(00) 90000-0000")
+        $("#Cep").mask("00.000-000")
+    </script>
 
     <!-- Adicionando JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -109,6 +99,8 @@
                 $("#Endereco").val("");
                 $("#Bairro").val("");
                 $("#Cidade").val("");
+                $("#Numero").val("");
+                $("#Complemento").val("");
             }
 
             //Quando o campo cep perde o foco.

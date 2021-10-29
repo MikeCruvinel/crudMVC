@@ -18,25 +18,28 @@ namespace crud.DATA.Models
 
         [Key]
         public int Id { get; set; }
-        
+        [Required]
+        [MaxLength(200)]
         [StringLength(200)]
-        [MaxLength(200, ErrorMessage ="Digite no máximo 200 digitos")]
         public string Nome { get; set; }
-        [MinLength(14, ErrorMessage = "Telefone invalido!")]
+        [Required]
         [StringLength(50)]
         public string Telefone { get; set; }
+        [Required]
         [StringLength(100)]
         public string Endereco { get; set; }
+        [Required]
         [StringLength(50)]
         public string Bairro { get; set; }
+        [Required]
         [StringLength(50)]
         public string Cidade { get; set; }
+        [Required]
         [StringLength(50)]
         public string Numero { get; set; }
         [StringLength(50)]
         public string Complemento { get; set; }
         [Column("CEP")]
-        [MinLength(10, ErrorMessage ="CEP invalido!")]
         [StringLength(50)]
         public string Cep { get; set; }
 

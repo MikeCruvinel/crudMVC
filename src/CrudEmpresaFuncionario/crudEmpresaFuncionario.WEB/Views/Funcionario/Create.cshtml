@@ -40,7 +40,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Salario" class="control-label"></label>
-                <input asp-for="Salario" class="form-control" />
+                <input type="text" asp-for="Salario" class="form-control" />
                 <span asp-validation-for="Salario" class="text-danger"></span>
             </div>
             <br />
@@ -52,8 +52,14 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/lib/jquery/dist/jquery.mask.min.js"></script>
     <script type="text/javascript">
-        $("#Salario").mask("999.999.990,00", { reverse: true })
+       $(document).ready(function () {
+           $('#Salario').mask('999,999.00', { reverse: true });
+
+           $("#Salario").change(function () {
+               $("#Salario").html($(this).val().replace(/\D/g, ''))
+            })
+        });
     </script>
 }
