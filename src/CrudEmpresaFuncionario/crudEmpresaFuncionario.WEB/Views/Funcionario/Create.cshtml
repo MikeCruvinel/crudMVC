@@ -55,11 +55,8 @@
     <script src="~/lib/jquery/dist/jquery.mask.min.js"></script>
     <script type="text/javascript">
        $(document).ready(function () {
-           $('#Salario').mask('999,999.00', { reverse: true });
+           $("#Salario").inputmask('Regex', {regex: "^[0-9]{1,6}(\\.\\d{1,2})?$"});
 
-           $("#Salario").change(function () {
-               $("#Salario").html($(this).val().replace(/\D/g, ''))
-            })
         });
     </script>
 }

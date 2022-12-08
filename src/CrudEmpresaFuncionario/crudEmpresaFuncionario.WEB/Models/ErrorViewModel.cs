@@ -1,5 +1,3 @@
-using System;
-
 namespace crudEmpresaFuncionario.WEB.Models
 {
     public class ErrorViewModel

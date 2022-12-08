@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace crud.DATA.Repositories
 {
@@ -19,7 +17,7 @@ namespace crud.DATA.Repositories
             _SaveChances = saveChanges;
             _context = new CrudmvcContext();
         }
-        
+
         public T Alterar(T objeto)
         {
             _context.Entry(objeto).State = EntityState.Modified;
@@ -45,7 +43,7 @@ namespace crud.DATA.Repositories
         public void Excluir(T objeto)
         {
             _context.Set<T>().Remove(objeto);
-            
+
             if (_SaveChances)
             {
                 _context.SaveChanges();

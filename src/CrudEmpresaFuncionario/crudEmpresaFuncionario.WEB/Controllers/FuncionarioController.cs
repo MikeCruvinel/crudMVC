@@ -1,23 +1,25 @@
-﻿using crud.DATA.Models;
-using crud.DATA.Services;
-using crudEmpresaFuncionario.WEB.Models;
+﻿using crud.DATA.Interface;
+using crud.DATA.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace crudEmpresaFuncionario.WEB.Controllers
 {
     public class FuncionarioController : Controller
     {
+        private readonly IRepositoryEmpresa _repositoryEmpresa;
+        private readonly IRepositoryFuncionario _repositoryFuncionario;
 
-        private FuncionarioService oFuncionarioService = new FuncionarioService();
-        private EmpresaService oEmpresaService = new EmpresaService();
+        public FuncionarioController(IRepositoryFuncionario repositoryFuncionario,
+            IRepositoryEmpresa repositoryEmpresa)
+        {
+            _repositoryEmpresa = repositoryEmpresa;
+            _repositoryFuncionario = repositoryFuncionario;
+        }
 
         public IActionResult Index()
         {
-            List<Funcionario> lst_funcionario = oFuncionarioService.oRepositoryFuncionario.SelecionarTodos();
+            List<Funcionario> lst_funcionario = _repositoryFuncionario.SelecionarTodos();
             return View(lst_funcionario);
         }
         public IActionResult Create(int IdEmpresa)
@@ -35,21 +37,21 @@ namespace crudEmpresaFuncionario.WEB.Controllers
             if (!ModelState.IsValid)
                 return View();
 
-            oFuncionarioService.oRepositoryFuncionario.Incluir(model);
+            _repositoryFuncionario.Incluir(model);
 
             return RedirectToAction("Details", model);
         }
         public IActionResult Details(int Id)
         {
-            Funcionario oFuncionario = oFuncionarioService.oRepositoryFuncionario.SelecionarPK(Id);
-            Empresa oEmpresa = oEmpresaService.oRepositoryEmpresa.SelecionarPK(oFuncionario.IdEmpresa);
+            Funcionario oFuncionario = _repositoryFuncionario.SelecionarPK(Id);
+            Empresa oEmpresa = _repositoryEmpresa.SelecionarPK(oFuncionario.IdEmpresa);
             ViewBag.NomeEmpresa = oEmpresa.Nome;
             return View(oFuncionario);
         }
 
         public IActionResult Edit(int Id)
         {
-            Funcionario oFuncionario = oFuncionarioService.oRepositoryFuncionario.SelecionarPK(Id);
+            Funcionario oFuncionario = _repositoryFuncionario.SelecionarPK(Id);
             ViewBag.IdEmpresa = oFuncionario.IdEmpresa;
             return View(oFuncionario);
         }
@@ -58,7 +60,7 @@ namespace crudEmpresaFuncionario.WEB.Controllers
         [HttpPost]
         public IActionResult Edit(Funcionario model)
         {
-            Funcionario oFuncionario = oFuncionarioService.oRepositoryFuncionario.Alterar(model);
+            Funcionario oFuncionario = _repositoryFuncionario.Alterar(model);
 
             int Id = oFuncionario.Id;
 
@@ -67,7 +69,7 @@ namespace crudEmpresaFuncionario.WEB.Controllers
 
         public IActionResult Delete(int Id)
         {
-            oFuncionarioService.oRepositoryFuncionario.Excluir(Id);
+            _repositoryFuncionario.Excluir(Id);
             return RedirectToAction("Index", "empresa");
         }
     }

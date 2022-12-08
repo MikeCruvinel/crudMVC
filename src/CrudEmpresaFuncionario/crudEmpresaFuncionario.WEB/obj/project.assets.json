@@ -7497,38 +7497,39 @@
   },
   "packageFolders": {
     "C:\\Users\\Cruvi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
+      "projectUniqueName": "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
       "projectName": "crudEmpresaFuncionario.WEB",
-      "projectPath": "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
+      "projectPath": "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
       "packagesPath": "C:\\Users\\Cruvi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\obj\\",
+      "outputPath": "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Cruvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://azuldevops.pkgs.visualstudio.com/_packaging/azulframework/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crud.DATA\\crud.DATA.csproj": {
-              "projectPath": "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crud.DATA\\crud.DATA.csproj"
+            "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crud.DATA\\crud.DATA.csproj": {
+              "projectPath": "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crud.DATA\\crud.DATA.csproj"
             }
           }
         }
@@ -7590,7 +7591,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

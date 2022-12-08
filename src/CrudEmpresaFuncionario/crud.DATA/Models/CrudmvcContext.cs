@@ -16,6 +16,7 @@ namespace crud.DATA.Models
         public CrudmvcContext(DbContextOptions<CrudmvcContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public virtual DbSet<Empresa> Empresa { get; set; }
@@ -25,7 +26,7 @@ namespace crud.DATA.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=crudmvc.database.windows.net;Initial Catalog=crudMVCreaaal ;User ID=Mike;Password=Passarinho020700.");
+                optionsBuilder.UseSqlServer(@"Server=myservercrud.database.windows.net;Database=crudMVC;User Id=adazure;Password=Vitu@020700;");
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cRaEQOg8+K1OqZKZdyh4rQUjRsd1C9WkD9RFoVLirdl75Ehkb/5vSyVAUJYN8dg7h7Wy7uDqWOA1Id3m2O9FSQ==",
+  "dgSpecHash": "lHt/79ExqseatH1uv8AjQoDg/hfexe8NF8gD2dFf/HH39QfUYf6QPAFOyn5TgEaGuXCZw4RcYtZ20TyBMNxPhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cruvi\\Documents\\ProjetoCRUD\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
+  "projectFilePath": "C:\\Git\\crudMVC\\src\\CrudEmpresaFuncionario\\crudEmpresaFuncionario.WEB\\crudEmpresaFuncionario.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cruvi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Cruvi\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
